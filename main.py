@@ -43,7 +43,7 @@ def main():
         for asteroid in gr_asteroids:
             for bullet in gr_shots:
                 if asteroid.collides_with(bullet):
-                    asteroid.kill()
+                    asteroid.split()
                     bullet.kill()
             
             if asteroid.collides_with(player):
